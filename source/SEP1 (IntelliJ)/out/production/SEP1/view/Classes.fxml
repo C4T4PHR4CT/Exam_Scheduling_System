@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="505.0" prefHeight="500.0" prefWidth="505.0" userData="Exam Scheduler - classes" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ClassesController">
+   <children>
+      <HBox fillHeight="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#Back" prefHeight="37.0" prefWidth="55.0" text="Back">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" fillHeight="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0">
+         <children>
+            <Button fx:id="NamOrd" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#NameOrder" prefHeight="28.0" prefWidth="189.0" text="Name \/">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="7.0" top="-1.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="SizOrd" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#SizeOrder" prefHeight="28.0" prefWidth="114.0" text="Participants">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="7.0" top="-1.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="28.0" prefWidth="84.0" text="Groups" fx:id="GrpOrd" onAction="#GroupOrder">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="7.0" top="-1.0" />
+               </padding>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <ListView fx:id="Classes" prefHeight="310.0" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets top="1.0" />
+         </VBox.margin>
+      </ListView>
+      <HBox fillHeight="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="439.0">
+         <children>
+            <TextField fx:id="NamInp" onKeyTyped="#Name" prefHeight="30.0" prefWidth="189.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#AddClass" prefHeight="30.0" prefWidth="118.0" text="Add new class">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets top="-1.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox fillHeight="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="459.0">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#RenameClass" prefHeight="30.0" prefWidth="189.0" text="Rename class to:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets top="-1.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <TextField fx:id="ReNamInp" onKeyTyped="#ReName" prefHeight="30.0" prefWidth="189.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox fillHeight="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="465.0">
+         <children>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#RemoveClass" prefHeight="30.0" prefWidth="189.0" text="Remove class (only class)">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="6.0" top="-1.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#RemoveClassStud" prefHeight="30.0" prefWidth="253.0" text="Remove class (including students)">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="8.0" top="-1.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets left="20.0" right="20.0" />
+   </padding>
+</VBox>

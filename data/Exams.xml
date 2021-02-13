@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <Exams>
+        <WrittenExam>
+            <Name>IT-MSE1X</Name>
+            <Place>106</Place>
+            <Participating>IT-1X-A19</Participating>
+            <Examiner1>Dacey Lott</Examiner1>
+            <Duration>240</Duration>
+            <Start>06/01/2020 8:00</Start>
+            <End>06/01/2020 12:00</End>
+            <Web>
+                <StartDay>2MO</StartDay>
+                <StartDay>0800</StartDay>
+                <MidDays>
+                </MidDays>
+                <EndDay>2MO</EndDay>
+                <EndDay>1200</EndDay>
+            </Web>
+        </WrittenExam>
+        <WrittenExam>
+            <Name>IT-MSE1Y</Name>
+            <Place>107</Place>
+            <Participating>IT-1Y-A19</Participating>
+            <Examiner1>Dacey Lott</Examiner1>
+            <Duration>240</Duration>
+            <Start>07/01/2020 8:00</Start>
+            <End>07/01/2020 12:00</End>
+            <Web>
+                <StartDay>2TU</StartDay>
+                <StartDay>0800</StartDay>
+                <MidDays>
+                </MidDays>
+                <EndDay>2TU</EndDay>
+                <EndDay>1200</EndDay>
+            </Web>
+        </WrittenExam>
+        <WrittenExam>
+            <Name>IT-MSE1Z</Name>
+            <Place>205</Place>
+            <Participating>IT-1Z-A19</Participating>
+            <Examiner1>Ora Hayden</Examiner1>
+            <Duration>240</Duration>
+            <Start>06/01/2020 10:15</Start>
+            <End>06/01/2020 14:15</End>
+            <Web>
+                <StartDay>2MO</StartDay>
+                <StartDay>1000</StartDay>
+                <MidDays>
+                </MidDays>
+                <EndDay>2MO</EndDay>
+                <EndDay>1430</EndDay>
+            </Web>
+        </WrittenExam>
+        <WrittenExam>
+            <Name>IT-DNP1X</Name>
+            <Place>206a</Place>
+            <Participating>IT-3X-A19</Participating>
+            <Examiner1>Gisela Carey</Examiner1>
+            <Duration>120</Duration>
+            <Start>06/01/2020 9:30</Start>
+            <End>06/01/2020 11:30</End>
+            <Web>
+                <StartDay>2MO</StartDay>
+                <StartDay>0930</StartDay>
+                <MidDays>
+                </MidDays>
+                <EndDay>2MO</EndDay>
+                <EndDay>1130</EndDay>
+            </Web>
+        </WrittenExam>
+        <WrittenExam>
+            <Name>IT-DNP1Y</Name>
+            <Place>206b</Place>
+            <Participating>IT-3Y-A19</Participating>
+            <Examiner1>Gisela Carey</Examiner1>
+            <Duration>120</Duration>
+            <Start>07/01/2020 8:45</Start>
+            <End>07/01/2020 10:45</End>
+            <Web>
+                <StartDay>2TU</StartDay>
+                <StartDay>0830</StartDay>
+                <MidDays>
+                </MidDays>
+                <EndDay>2TU</EndDay>
+                <EndDay>1100</EndDay>
+            </Web>
+        </WrittenExam>
+        <WrittenExam>
+            <Name>IT-NES1X</Name>
+            <Place>208</Place>
+            <Participating>IT-3X-A19</Participating>
+            <Examiner1>Elvis Hunter</Examiner1>
+            <Duration>120</Duration>
+            <Start>07/01/2020 8:10</Start>
+            <End>07/01/2020 10:10</End>
+            <Web>
+                <StartDay>2TU</StartDay>
+                <StartDay>0800</StartDay>
+                <MidDays>
+                </MidDays>
+                <EndDay>2TU</EndDay>
+                <EndDay>1030</EndDay>
+            </Web>
+        </WrittenExam>
+        <WrittenExam>
+            <Name>IT-NES1Y</Name>
+            <Place>209</Place>
+            <Participating>IT-3Y-A19</Participating>
+            <Examiner1>Elvis Hunter</Examiner1>
+            <Duration>120</Duration>
+            <Start>08/01/2020 10:20</Start>
+            <End>08/01/2020 12:20</End>
+            <Web>
+                <StartDay>2WE</StartDay>
+                <StartDay>1000</StartDay>
+                <MidDays>
+                </MidDays>
+                <EndDay>2WE</EndDay>
+                <EndDay>1230</EndDay>
+            </Web>
+        </WrittenExam>
+        <WrittenExam>
+            <Name>IT-DAI1</Name>
+            <Place>213</Place>
+            <Participating>IT-4-A19</Participating>
+            <Examiner1>Flynn Mills</Examiner1>
+            <Duration>180</Duration>
+            <Start>06/01/2020 9:25</Start>
+            <End>06/01/2020 12:25</End>
+            <Web>
+                <StartDay>2MO</StartDay>
+                <StartDay>0900</StartDay>
+                <MidDays>
+                </MidDays>
+                <EndDay>2MO</EndDay>
+                <EndDay>1230</EndDay>
+            </Web>
+        </WrittenExam>
+        <WrittenExam>
+            <Name>IT-ADS1</Name>
+            <Place>213</Place>
+            <Participating>IT-4-A19</Participating>
+            <Examiner1>Flynn Mills</Examiner1>
+            <Duration>180</Duration>
+            <Start>07/01/2020 10:40</Start>
+            <End>07/01/2020 13:40</End>
+            <Web>
+                <StartDay>2TU</StartDay>
+                <StartDay>1030</StartDay>
+                <MidDays>
+                </MidDays>
+                <EndDay>2TU</EndDay>
+                <EndDay>1400</EndDay>
+            </Web>
+        </WrittenExam>
+        <OralExam>
+            <Name>IT-SDJ1X</Name>
+            <Place>102</Place>
+            <Participating>IT-1X-A19</Participating>
+            <Examiner1>Erich Wade</Examiner1>
+            <Examiner2>Aquila Huff</Examiner2>
+            <Duration>990</Duration>
+            <BreakDurationPerStudent>20</BreakDurationPerStudent>
+            <DurationPerStudent>10</DurationPerStudent>
+            <Start>13/01/2020 8:00</Start>
+            <End>15/01/2020 8:30</End>
+            <Web>
+                <StartDay>3MO</StartDay>
+                <StartDay>0800</StartDay>
+                <MidDays>
+                    <MidDay>3TU</MidDay>
+                </MidDays>
+                <EndDay>3WE</EndDay>
+                <EndDay>0830</EndDay>
+            </Web>
+        </OralExam>
+        <OralExam>
+            <Name>IT-SDJ1Y</Name>
+            <Place>103</Place>
+            <Participating>IT-1Y-A19</Participating>
+            <Examiner1>Erich Wade</Examiner1>
+            <Examiner2>Robert Hicks</Examiner2>
+            <Duration>990</Duration>
+            <BreakDurationPerStudent>20</BreakDurationPerStudent>
+            <DurationPerStudent>10</DurationPerStudent>
+            <Start>16/01/2020 8:00</Start>
+            <End>20/01/2020 8:30</End>
+            <Web>
+                <StartDay>3TH</StartDay>
+                <StartDay>0800</StartDay>
+                <MidDays>
+                    <MidDay>3FR</MidDay>
+                </MidDays>
+                <EndDay>4MO</EndDay>
+                <EndDay>0830</EndDay>
+            </Web>
+        </OralExam>
+        <OralExam>
+            <Name>IT-SDJ1Z</Name>
+            <Place>105b</Place>
+            <Participating>IT-1Z-A19</Participating>
+            <Examiner1>Russell Wilkerson</Examiner1>
+            <Examiner2>Robert Hicks</Examiner2>
+            <Duration>1020</Duration>
+            <BreakDurationPerStudent>20</BreakDurationPerStudent>
+            <DurationPerStudent>10</DurationPerStudent>
+            <Start>13/01/2020 8:00</Start>
+            <End>15/01/2020 9:00</End>
+            <Web>
+                <StartDay>3MO</StartDay>
+                <StartDay>0800</StartDay>
+                <MidDays>
+                    <MidDay>3TU</MidDay>
+                </MidDays>
+                <EndDay>3WE</EndDay>
+                <EndDay>0900</EndDay>
+            </Web>
+        </OralExam>
+        <OralExam>
+            <Name>IT-RWD1X</Name>
+            <Place>209</Place>
+            <Participating>IT-1X-A19</Participating>
+            <Examiner1>Allen Kirby</Examiner1>
+            <Examiner2>Henry Sykes</Examiner2>
+            <Duration>660</Duration>
+            <BreakDurationPerStudent>15</BreakDurationPerStudent>
+            <DurationPerStudent>5</DurationPerStudent>
+            <Start>16/01/2020 8:00</Start>
+            <End>17/01/2020 11:00</End>
+            <Web>
+                <StartDay>3TH</StartDay>
+                <StartDay>0800</StartDay>
+                <MidDays>
+                </MidDays>
+                <EndDay>3FR</EndDay>
+                <EndDay>1100</EndDay>
+            </Web>
+        </OralExam>
+        <OralExam>
+            <Name>IT-RWD1Y</Name>
+            <Place>213</Place>
+            <Participating>IT-1Y-A19</Participating>
+            <Examiner1>Allen Kirby</Examiner1>
+            <Examiner2>Henry Sykes</Examiner2>
+            <Duration>660</Duration>
+            <BreakDurationPerStudent>15</BreakDurationPerStudent>
+            <DurationPerStudent>5</DurationPerStudent>
+            <Start>13/01/2020 8:00</Start>
+            <End>14/01/2020 11:00</End>
+            <Web>
+                <StartDay>3MO</StartDay>
+                <StartDay>0800</StartDay>
+                <MidDays>
+                </MidDays>
+                <EndDay>3TU</EndDay>
+                <EndDay>1100</EndDay>
+            </Web>
+        </OralExam>
+        <OralExam>
+            <Name>IT-RWD1Z</Name>
+            <Place>216</Place>
+            <Participating>IT-1Z-A19</Participating>
+            <Examiner1>Lucy Foley</Examiner1>
+            <Examiner2>Tyrone Holmes</Examiner2>
+            <Duration>680</Duration>
+            <BreakDurationPerStudent>15</BreakDurationPerStudent>
+            <DurationPerStudent>5</DurationPerStudent>
+            <Start>16/01/2020 8:00</Start>
+            <End>17/01/2020 11:20</End>
+            <Web>
+                <StartDay>3TH</StartDay>
+                <StartDay>0800</StartDay>
+                <MidDays>
+                </MidDays>
+                <EndDay>3FR</EndDay>
+                <EndDay>1130</EndDay>
+            </Web>
+        </OralExam>
+        <OralExam>
+            <Name>IT-SDJ2</Name>
+            <Place>216</Place>
+            <Participating>IT-2-A19</Participating>
+            <Examiner1>Russell Wilkerson</Examiner1>
+            <Examiner2>Tyrone Holmes</Examiner2>
+            <Duration>800</Duration>
+            <BreakDurationPerStudent>15</BreakDurationPerStudent>
+            <DurationPerStudent>5</DurationPerStudent>
+            <Start>07/01/2020 8:00</Start>
+            <End>08/01/2020 13:20</End>
+            <Web>
+                <StartDay>2TU</StartDay>
+                <StartDay>0800</StartDay>
+                <MidDays>
+                </MidDays>
+                <EndDay>2WE</EndDay>
+                <EndDay>1330</EndDay>
+            </Web>
+        </OralExam>
+        <OralExam>
+            <Name>IT-DBS1</Name>
+            <Place>304c</Place>
+            <Participating>IT-2-A19</Participating>
+            <Examiner1>Lev Walker</Examiner1>
+            <Examiner2>Marah Guzman</Examiner2>
+            <Duration>800</Duration>
+            <BreakDurationPerStudent>15</BreakDurationPerStudent>
+            <DurationPerStudent>5</DurationPerStudent>
+            <Start>14/01/2020 9:00</Start>
+            <End>15/01/2020 15:20</End>
+            <Web>
+                <StartDay>3TU</StartDay>
+                <StartDay>0900</StartDay>
+                <MidDays>
+                </MidDays>
+                <EndDay>3WE</EndDay>
+                <EndDay>1530</EndDay>
+            </Web>
+        </OralExam>
+        <OralExam>
+            <Name>IT-SDJ3Y</Name>
+            <Place>306</Place>
+            <Participating>IT-3Y-A19</Participating>
+            <Examiner1>Bree Mcmillan</Examiner1>
+            <Examiner2>Noelani Malone</Examiner2>
+            <Duration>875</Duration>
+            <BreakDurationPerStudent>20</BreakDurationPerStudent>
+            <DurationPerStudent>15</DurationPerStudent>
+            <Start>08/01/2020 10:00</Start>
+            <End>10/01/2020 8:35</End>
+            <Web>
+                <StartDay>2WE</StartDay>
+                <StartDay>1000</StartDay>
+                <MidDays>
+                    <MidDay>2TH</MidDay>
+                </MidDays>
+                <EndDay>2FR</EndDay>
+                <EndDay>0900</EndDay>
+            </Web>
+        </OralExam>
+        <OralExam>
+            <Name>IT-AND1</Name>
+            <Place>313</Place>
+            <Participating>IT-4-A19</Participating>
+            <Examiner1>Lev Walker</Examiner1>
+            <Examiner2>Noelani Malone</Examiner2>
+            <Duration>900</Duration>
+            <BreakDurationPerStudent>15</BreakDurationPerStudent>
+            <DurationPerStudent>10</DurationPerStudent>
+            <Start>16/01/2020 8:00</Start>
+            <End>17/01/2020 16:00</End>
+            <Web>
+                <StartDay>3TH</StartDay>
+                <StartDay>0800</StartDay>
+                <MidDays>
+                </MidDays>
+                <EndDay>3FR</EndDay>
+                <EndDay>1600</EndDay>
+            </Web>
+        </OralExam>
+        <OralExam>
+            <Name>IT-SDJ3X</Name>
+            <Place>304c</Place>
+            <Participating>IT-3X-A19</Participating>
+            <Examiner1>Bree Mcmillan</Examiner1>
+            <Examiner2>Marah Guzman</Examiner2>
+            <Duration>1120</Duration>
+            <BreakDurationPerStudent>25</BreakDurationPerStudent>
+            <DurationPerStudent>15</DurationPerStudent>
+            <Start>13/01/2020 8:00</Start>
+            <End>15/01/2020 10:40</End>
+            <Web>
+                <StartDay>3MO</StartDay>
+                <StartDay>0800</StartDay>
+                <MidDays>
+                    <MidDay>3TU</MidDay>
+                </MidDays>
+                <EndDay>3WE</EndDay>
+                <EndDay>1100</EndDay>
+            </Web>
+        </OralExam>
+        <ProjectExam>
+            <Name>IT-SEP1Z</Name>
+            <Place>105b</Place>
+            <Participating>IT-1Z-A19</Participating>
+            <Examiner1>Nola Turner</Examiner1>
+            <Examiner2>Kimberly Espinoza</Examiner2>
+            <Duration>710</Duration>
+            <BreakDurationPerGroup>25</BreakDurationPerGroup>
+            <DurationPerStudentPerGroup>15</DurationPerStudentPerGroup>
+            <Start>20/01/2020 8:00</Start>
+            <End>21/01/2020 11:50</End>
+            <Web>
+                <StartDay>4MO</StartDay>
+                <StartDay>0800</StartDay>
+                <MidDays>
+                </MidDays>
+                <EndDay>4TU</EndDay>
+                <EndDay>1200</EndDay>
+            </Web>
+        </ProjectExam>
+        <ProjectExam>
+            <Name>IT-SEP3Z</Name>
+            <Place>209</Place>
+            <Participating>IT-3Y-A19</Participating>
+            <Examiner1>Idona Dalton</Examiner1>
+            <Examiner2>Tyrone Holmes</Examiner2>
+            <Duration>525</Duration>
+            <BreakDurationPerGroup>25</BreakDurationPerGroup>
+            <DurationPerStudentPerGroup>15</DurationPerStudentPerGroup>
+            <Start>22/01/2020 8:00</Start>
+            <End>23/01/2020 8:45</End>
+            <Web>
+                <StartDay>4WE</StartDay>
+                <StartDay>0800</StartDay>
+                <MidDays>
+                </MidDays>
+                <EndDay>4TH</EndDay>
+                <EndDay>0900</EndDay>
+            </Web>
+        </ProjectExam>
+        <ProjectExam>
+            <Name>IT-SEP4</Name>
+            <Place>213</Place>
+            <Participating>IT-4-A19</Participating>
+            <Examiner1>Aquila Huff</Examiner1>
+            <Examiner2>Tyrone Holmes</Examiner2>
+            <Duration>740</Duration>
+            <BreakDurationPerGroup>25</BreakDurationPerGroup>
+            <DurationPerStudentPerGroup>15</DurationPerStudentPerGroup>
+            <Start>20/01/2020 8:00</Start>
+            <End>21/01/2020 12:20</End>
+            <Web>
+                <StartDay>4MO</StartDay>
+                <StartDay>0800</StartDay>
+                <MidDays>
+                </MidDays>
+                <EndDay>4TU</EndDay>
+                <EndDay>1230</EndDay>
+            </Web>
+        </ProjectExam>
+        <ProjectExam>
+            <Name>IT-SEP1Y</Name>
+            <Place>103</Place>
+            <Participating>IT-1Y-A19</Participating>
+            <Examiner1>Alexandra Sears</Examiner1>
+            <Examiner2>Yardley Chandler</Examiner2>
+            <Duration>695</Duration>
+            <BreakDurationPerGroup>25</BreakDurationPerGroup>
+            <DurationPerStudentPerGroup>15</DurationPerStudentPerGroup>
+            <Start>22/01/2020 9:20</Start>
+            <End>23/01/2020 12:55</End>
+            <Web>
+                <StartDay>4WE</StartDay>
+                <StartDay>0900</StartDay>
+                <MidDays>
+                </MidDays>
+                <EndDay>4TH</EndDay>
+                <EndDay>1300</EndDay>
+            </Web>
+        </ProjectExam>
+        <ProjectExam>
+            <Name>IT-SEP2</Name>
+            <Place>103</Place>
+            <Participating>IT-2-A19</Participating>
+            <Examiner1>Noelle Bush</Examiner1>
+            <Examiner2>Xyla Mcpherson</Examiner2>
+            <Duration>850</Duration>
+            <BreakDurationPerGroup>25</BreakDurationPerGroup>
+            <DurationPerStudentPerGroup>15</DurationPerStudentPerGroup>
+            <Start>20/01/2020 8:30</Start>
+            <End>21/01/2020 15:40</End>
+            <Web>
+                <StartDay>4MO</StartDay>
+                <StartDay>0830</StartDay>
+                <MidDays>
+                </MidDays>
+                <EndDay>4TU</EndDay>
+                <EndDay>1600</EndDay>
+            </Web>
+        </ProjectExam>
+        <ProjectExam>
+            <Name>IT-SEP1X</Name>
+            <Place>102</Place>
+            <Participating>IT-1X-A19</Participating>
+            <Examiner1>Alexandra Sears</Examiner1>
+            <Examiner2>Ulysses Vasquez</Examiner2>
+            <Duration>695</Duration>
+            <BreakDurationPerGroup>25</BreakDurationPerGroup>
+            <DurationPerStudentPerGroup>15</DurationPerStudentPerGroup>
+            <Start>20/01/2020 8:15</Start>
+            <End>21/01/2020 11:50</End>
+            <Web>
+                <StartDay>4MO</StartDay>
+                <StartDay>0800</StartDay>
+                <MidDays>
+                </MidDays>
+                <EndDay>4TU</EndDay>
+                <EndDay>1200</EndDay>
+            </Web>
+        </ProjectExam>
+        <ProjectExam>
+            <Name>IT-SEP3X</Name>
+            <Place>209</Place>
+            <Participating>IT-3X-A19</Participating>
+            <Examiner1>Idona Dalton</Examiner1>
+            <Examiner2>Henry Sykes</Examiner2>
+            <Duration>595</Duration>
+            <BreakDurationPerGroup>25</BreakDurationPerGroup>
+            <DurationPerStudentPerGroup>15</DurationPerStudentPerGroup>
+            <Start>20/01/2020 9:30</Start>
+            <End>21/01/2020 11:25</End>
+            <Web>
+                <StartDay>4MO</StartDay>
+                <StartDay>0930</StartDay>
+                <MidDays>
+                </MidDays>
+                <EndDay>4TU</EndDay>
+                <EndDay>1130</EndDay>
+            </Web>
+        </ProjectExam>
+        <Web>
+            <Classes>
+                <Class>IT-1X-A19</Class>
+                <Class>IT-1Y-A19</Class>
+                <Class>IT-1Z-A19</Class>
+                <Class>IT-2-A19</Class>
+                <Class>IT-3X-A19</Class>
+                <Class>IT-3Y-A19</Class>
+                <Class>IT-4-A19</Class>
+            </Classes>
+            <Weeks>
+                <Week>Week 1~(January 2 - January 3)</Week>
+                <Week>Week 2~(January 6 - January 10)</Week>
+                <Week>Week 3~(January 13 - January 17)</Week>
+                <Week>Week 4~(January 20 - January 24)</Week>
+            </Weeks>
+            <ExamPeriod>
+                <StartSpec>16</StartSpec>
+                <EndSpec>34</EndSpec>
+            </ExamPeriod>
+        </Web>
+    </Exams>

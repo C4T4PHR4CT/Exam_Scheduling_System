@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="718.0" minWidth="761.0" prefHeight="718.0" prefWidth="761.0" userData="Exam Scheduler - exam period" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ExamPeriodController">
+   <children>
+      <VBox alignment="CENTER_LEFT" fillWidth="false" prefHeight="800.0" prefWidth="251.0">
+         <children>
+            <Button alignment="CENTER" minHeight="-Infinity" mnemonicParsing="false" onAction="#Back" prefHeight="37.0" prefWidth="55.0" text="Back">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Label minHeight="-Infinity" prefHeight="27.0" prefWidth="99.0" text="Valid Dates">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="77.0" />
+               </VBox.margin>
+            </Label>
+            <ListView fx:id="ValDates" prefHeight="320.0" prefWidth="227.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </ListView>
+            <HBox alignment="CENTER" minHeight="-Infinity" prefHeight="36.0" prefWidth="227.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#AddNewDate" prefHeight="29.0" prefWidth="107.0" text="Add date">
+                     <HBox.margin>
+                        <Insets right="11.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="-1.0" />
+                     </padding>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#RemoveDate" prefHeight="29.0" prefWidth="107.0" text="Remove date">
+                     <padding>
+                        <Insets top="-1.0" />
+                     </padding>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <DatePicker fx:id="NewDate" editable="false" minHeight="-Infinity" prefHeight="25.0" prefWidth="227.0" promptText="new date">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="10.0" />
+               </VBox.margin>
+            </DatePicker>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" fillWidth="false" prefHeight="623.0" prefWidth="500.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" fillHeight="false" minHeight="-Infinity" prefHeight="46.0" prefWidth="500.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="356.0" text="Start time">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="StrTimH" alignment="CENTER" onKeyTyped="#StartTime" prefHeight="30.0" prefWidth="27.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </padding>
+                  </TextField>
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="12.0" text=":">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="StrTimM" alignment="CENTER" onKeyTyped="#StartTime" prefHeight="30.0" prefWidth="27.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </padding>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Label text="*The time from when exams can take place on a valid date">
+               <VBox.margin>
+                  <Insets left="20.0" top="-10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" fillHeight="false" minHeight="-Infinity" prefHeight="46.0" prefWidth="500.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="356.0" text="End time">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="EndTimH" alignment="CENTER" onKeyTyped="#EndTime" prefHeight="30.0" prefWidth="27.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </padding>
+                  </TextField>
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="12.0" text=":">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="EndTimM" alignment="CENTER" onKeyTyped="#EndTime" prefHeight="30.0" prefWidth="27.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </padding>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Label text="*The time from when exams can not take place on a valid date">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="-10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER_LEFT" fillHeight="false" minHeight="-Infinity" prefHeight="46.0" prefWidth="500.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="356.0" text="Break Start time">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="BrkStrTimH" alignment="CENTER" onKeyTyped="#BreakStartTime" prefHeight="30.0" prefWidth="27.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </padding>
+                  </TextField>
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="12.0" text=":">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="BrkStrTimM" alignment="CENTER" onKeyTyped="#BreakStartTime" prefHeight="30.0" prefWidth="27.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </padding>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Label prefHeight="19.0" prefWidth="405.0" text="*The time after the break takes place for the examiners">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="-10.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="19.0" prefWidth="405.0" text="  of the oral exams and the project exams">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="-15.0" left="20.0" top="-4.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER_LEFT" fillHeight="false" minHeight="-Infinity" prefHeight="46.0" prefWidth="500.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="356.0" text="Break End time">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="BrkEndTimH" alignment="CENTER" onKeyTyped="#BreakEndTime" prefHeight="30.0" prefWidth="27.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </padding>
+                  </TextField>
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="12.0" text=":">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="BrkEndTimM" alignment="CENTER" onKeyTyped="#BreakEndTime" prefHeight="30.0" prefWidth="27.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </padding>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Label text="*The time before the break takes place for the examiners">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="-10.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="19.0" prefWidth="405.0" text="  of the oral exams and the project exams">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="-15.0" left="20.0" top="-4.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER_LEFT" fillHeight="false" minHeight="-Infinity" prefHeight="46.0" prefWidth="651.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="356.0" text="Break duration">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="BrkDur" alignment="CENTER" onKeyTyped="#BreakDuration" prefHeight="30.0" prefWidth="43.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </padding>
+                  </TextField>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="28.0" prefWidth="73.0" text="minutes">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="2.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Label text="*The duration of the break for the examiners of the">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="-10.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="19.0" prefWidth="405.0" text="  oral exams and the project exams">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="-15.0" left="20.0" top="-4.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER_LEFT" fillHeight="false" minHeight="-Infinity" prefHeight="46.0" prefWidth="651.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="356.0" text="default duration per Student">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="DefDurPerStd" alignment="CENTER" onKeyTyped="#DefaultDurationPerStudent" prefHeight="30.0" prefWidth="43.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </padding>
+                  </TextField>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="28.0" prefWidth="73.0" text="minutes">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="2.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Label text="*The default value of the duration per student in oral exams">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="-10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER_LEFT" fillHeight="false" minHeight="-Infinity" prefHeight="46.0" prefWidth="651.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="356.0" text="default duration per Student per Group">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="DefDurPerStdPerGrp" alignment="CENTER" onKeyTyped="#DefaultDurationPerStudentPerGroup" prefHeight="30.0" prefWidth="43.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </padding>
+                  </TextField>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="28.0" prefWidth="73.0" text="minutes">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="2.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Label text="*The default value of the duration per student per group in project exams">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="-10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER_LEFT" fillHeight="false" minHeight="-Infinity" prefHeight="46.0" prefWidth="651.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="356.0" text="default Break duration per Student">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="DefBrkDurPerStd" alignment="CENTER" onKeyTyped="#DefaultBreakDurationPerStudent" prefHeight="30.0" prefWidth="43.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </padding>
+                  </TextField>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="28.0" prefWidth="73.0" text="minutes">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="2.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Label text="*The default value of the break duration per student in oral exams">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="-10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER_LEFT" fillHeight="false" minHeight="-Infinity" prefHeight="46.0" prefWidth="651.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="356.0" text="default Break duration per Group">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="DefBrkDurPerGrp" alignment="CENTER" onKeyTyped="#DefaultBreakDurationPerGroup" prefHeight="30.0" prefWidth="43.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </padding>
+                  </TextField>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="28.0" prefWidth="73.0" text="minutes">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="2.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Label text="*The default value of the break duration per group in project exams">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="-10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</HBox>

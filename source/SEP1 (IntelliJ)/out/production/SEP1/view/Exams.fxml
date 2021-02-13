@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="1600.0" prefHeight="800.0" prefWidth="1600.0" userData="Exam Scheduler - exams" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ExamsController">
+   <children>
+      <HBox alignment="BOTTOM_LEFT" fillHeight="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="140.0" prefWidth="1460.0">
+         <children>
+            <VBox alignment="BOTTOM_LEFT" prefHeight="120.0" prefWidth="81.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#Back" prefHeight="37.0" prefWidth="55.0" text="Back">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="TypOrd" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#TypeOrder" prefHeight="28.0" prefWidth="81.0" text="Type \/">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="7.0" top="-1.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </VBox>
+            <Button fx:id="NamOrd" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#NameOrder" prefHeight="28.0" prefWidth="177.0" text="Name">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="7.0" top="-1.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="PlcOrd" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#PlaceOrder" prefHeight="28.0" prefWidth="100.0" text="Place">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="8.0" top="-1.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="ClsOrd" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#ClassOrder" prefHeight="28.0" prefWidth="128.0" text="Class">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="8.0" top="-1.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="Exa1Ord" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Examiner1Order" prefHeight="28.0" prefWidth="171.0" text="Examiner 1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="8.0" top="-1.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="Exa2Ord" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Examiner2Order" prefHeight="28.0" prefWidth="171.0" text="Examiner 2">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="8.0" top="-1.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="StrDatOrd" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#StartDateOrder" prefHeight="28.0" prefWidth="120.0" text="Start date">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="8.0" top="-1.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="StrTimOrd" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#StartTimeOrder" prefHeight="28.0" prefWidth="96.0" text="Start time">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="8.0" top="-1.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="53.0">
+               <children>
+                  <VBox prefHeight="56.0" prefWidth="153.0" rotate="-90.0">
+                     <VBox.margin>
+                        <Insets left="-50.0" right="-50.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label text="*duration">
+                           <VBox.margin>
+                              <Insets left="55.0" top="9.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="  in minutes">
+                           <VBox.margin>
+                              <Insets left="56.0" top="-5.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Button fx:id="DurOrd" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#DurationOrder" prefHeight="28.0" prefWidth="53.0" text="Dur">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets left="7.0" top="-1.0" />
+                     </padding>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </VBox>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="28.0" prefWidth="146.0" text="End" fx:id="EndOrd" onAction="#EndOrder">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="8.0" top="-1.0" />
+               </padding>
+            </Button>
+            <VBox prefHeight="37.0" prefWidth="247.0" rotate="-90.0">
+               <children>
+                  <Label text="Break duration">
+                     <VBox.margin>
+                        <Insets bottom="-5.0" left="112.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label text="*per student or group">
+                     <VBox.margin>
+                        <Insets left="112.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="-92.0" right="-100.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="40.0" prefWidth="247.0" rotate="-90.0">
+               <children>
+                  <Label text="Duration per">
+                     <VBox.margin>
+                        <Insets bottom="-5.0" left="112.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label text="student">
+                     <VBox.margin>
+                        <Insets left="112.0" top="-5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="-95.0" right="-100.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="40.0" prefWidth="247.0" rotate="-90.0">
+               <children>
+                  <Label text="Number of">
+                     <VBox.margin>
+                        <Insets bottom="-5.0" left="112.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label text="students">
+                     <VBox.margin>
+                        <Insets left="112.0" top="-5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="-95.0" right="-100.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="40.0" prefWidth="247.0" rotate="-90.0">
+               <children>
+                  <Label text="Number of">
+                     <VBox.margin>
+                        <Insets bottom="-5.0" left="112.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label text="groups">
+                     <VBox.margin>
+                        <Insets left="112.0" top="-5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="-95.0" right="-120.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" />
+         </padding>
+      </HBox>
+      <ListView fx:id="Exams" prefHeight="310.0" prefWidth="760.0" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </ListView>
+      <HBox alignment="CENTER_LEFT" fillHeight="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="760.0">
+         <children>
+            <ChoiceBox fx:id="TypInp" prefHeight="30.0" prefWidth="81.0">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ChoiceBox>
+            <TextField fx:id="NamInp" onKeyTyped="#Name" prefHeight="30.0" prefWidth="177.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <ChoiceBox fx:id="PlcInp" prefHeight="30.0" prefWidth="100.0">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ChoiceBox>
+            <ChoiceBox fx:id="ClsInp" prefHeight="30.0" prefWidth="128.0">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ChoiceBox>
+            <ChoiceBox fx:id="Exa1Inp" prefHeight="30.0" prefWidth="171.0">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ChoiceBox>
+            <ChoiceBox fx:id="Exa2Inp" prefHeight="30.0" prefWidth="171.0">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ChoiceBox>
+            <DatePicker fx:id="StrDatInp" editable="false" prefHeight="30.0" prefWidth="120.0">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </DatePicker>
+            <TextField fx:id="StrTimH" onKeyTyped="#StartTimeHour" prefHeight="30.0" prefWidth="42.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <Label alignment="CENTER" prefHeight="25.0" prefWidth="12.0" text=":">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="StrTimM" onKeyTyped="#StartTimeMinute" prefHeight="30.0" prefWidth="42.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="DurInp" onKeyTyped="#Duration" prefHeight="30.0" prefWidth="53.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="BrkDur" onKeyTyped="#BreakDuration" prefHeight="30.0" prefWidth="43.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="157.0" right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="DurPerStd" onKeyTyped="#DurationPerStudent" prefHeight="30.0" prefWidth="43.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" fillHeight="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0">
+         <children>
+            <Label prefHeight="19.0" prefWidth="152.0" text="Requirements (classroom):">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="ReqInp" prefHeight="30.0" prefWidth="1164.0" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="760.0">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#AddExam" prefHeight="37.0" prefWidth="273.0" text="Add new / overwrite existing exam">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets top="-1.0" />
+               </padding>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#RemoveExam" prefHeight="37.0" prefWidth="200.0" text="Remove exam (by Name)">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets top="-1.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <CheckBox fx:id="Expand" mnemonicParsing="false" onAction="#ExpandDetails" prefHeight="37.0" prefWidth="153.0" text="Expand details">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </CheckBox>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#CheckConflicts" prefHeight="37.0" prefWidth="129.0" text="Check conflicts">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" top="5.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets left="20.0" right="20.0" />
+   </padding>
+</VBox>

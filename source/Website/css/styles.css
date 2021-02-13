@@ -1,0 +1,28 @@
+.navbar-nav 
+{
+    font-weight: 900;
+    font-size: 18px;
+}
+
+body {
+    
+    background-repeat: no-repeat;
+    background-image: url(../images/campus-background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+p, ul, h3, ol, h2 {
+    color: white;
+}
+
+.whatever {
+    margin-bottom: 350px;
+    text-align: center;
+}
+
+.whatever2 {
+    text-align: center;
+}

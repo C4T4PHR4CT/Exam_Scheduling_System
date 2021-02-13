@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Schedules</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="css/schedule-styles.css" type="text/css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-expand-md bg-black navbar-dark">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="../index.html"><img src="../images/VIA-logo.png" height="100" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar"><span class="navbar-toggler-icon"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav nav-fill w-100">
+                    <li class="nav-item"> <a class="nav-link" href="../index.html">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="../advice.html">Exam Advice</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="../rules.html">Exam Rules</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="../test%20forms.html">Exam Types</a> </li>
+                    <li class="nav-item active"> <a class="nav-link" href="../schedule/schedule-main.html">Schedule</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="../contact.html">Contacts</a> </li>
+                </ul>
+            </div>
+            <form class="form-inline my-10 my-lg-5 align-self-lg-center">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    
+    
+    
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12" id="midpart1">
+                <table class="mainT">
+                    
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12" id="midpart1">
+                <table class="weekT" >
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container scheduleT" id="midpart2">
+<!------------------------------------------------------------------------------------------------------------------
+        <div class="row">
+            <div class="col-xl-2   col-lg-3   col-md-4   col-4                                   ">Hour\Day</div>
+            <div class="col-xl-2   col-lg-3   col-md-4   col-8                                   ">Monday</div>
+            <div class="col-xl-2   col-lg-3   col-md-4            d-none   d-md-block            ">Tuesday</div>
+            <div class="col-xl-2   col-lg-3                       d-none   d-lg-block            ">Wednesday</div>
+            <div class="col-xl-2                                  d-none   d-xl-block            ">Thursday</div>
+            <div class="col-xl-2                                  d-none   d-xl-block            ">Friday</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-2   col-lg-3   col-md-4   col-4                                   ">8:00</div>
+            <div class="col-xl-2   col-lg-3   col-md-4   col-8                                   MO 08:00"></div>
+            <div class="col-xl-2   col-lg-3   col-md-4            d-none   d-md-block            TU 08:00"></div>
+            <div class="col-xl-2   col-lg-3                       d-none   d-lg-block            WE 08:00"></div>
+            <div class="col-xl-2                                  d-none   d-xl-block            TH 08:00"></div>
+            <div class="col-xl-2                                  d-none   d-xl-block            FR 08:00"></div>
+        </div>
+--------------------------------------------------------------------------------------------------------------------        
+        <div class="row">
+            <div class="           col-lg-3   col-md-4    col-4   d-none   d-block      d-xl-none">Hour\Day</div>
+            <div class="                                  col-8   d-none   d-block      d-md-none">Tuesday</div>
+            <div class="                      col-md-4            d-none   d-md-block   d-lg-none">Wednesday</div>
+            <div class="           col-lg-3   col-md-4            d-none   d-md-block   d-xl-none">Thursday</div>
+            <div class="           col-lg-3   col-md-4            d-none   d-lg-block   d-xl-none">Friday</div>
+        </div>
+        <div class="row">
+            <div class="           col-lg-3   col-md-4    col-4   d-none   d-block      d-xl-none">8:00</div>
+            <div class="                                  col-8   d-none   d-block      d-md-none TU 08:00"></div>
+            <div class="                      col-md-4            d-none   d-md-block   d-lg-none WE 08:00"></div>
+            <div class="           col-lg-3   col-md-4            d-none   d-md-block   d-xl-none TH 08:00"></div>
+            <div class="           col-lg-3   col-md-4            d-none   d-lg-block   d-xl-none FR 08:00"></div>
+        </div>
+--------------------------------------------------------------------------------------------------------------------         
+        <div class="row">
+            <div class="                      col-md-4    col-4   d-none   d-block      d-lg-none">Hour\Day</div>
+            <div class="                                  col-8   d-none   d-block      d-md-none">Wednesday</div>
+            <div class="                      col-md-4            d-none   d-md-block   d-lg-none">Friday</div>
+        </div>
+        <div class="row">
+            <div class="                      col-md-4    col-4   d-none   d-block      d-lg-none">8:00</div>
+            <div class="                                  col-8   d-none   d-block      d-md-none WE 08:00"></div>
+            <div class="                      col-md-4            d-none   d-md-block   d-lg-none FR 08:00"></div>
+        </div>
+ --------------------------------------------------------------------------------------------------------------------        
+        <div class="row">
+            <div class="                                  col-4   d-none   d-block      d-md-none">Hour\Day</div>
+            <div class="                                  col-8   d-none   d-block      d-md-none">Thursday</div>
+        </div>
+        <div class="row">
+            <div class="                                  col-4   d-none   d-block      d-md-none">8:00</div>
+            <div class="                                  col-8   d-none   d-block      d-md-none TH 08:00"></div>
+        </div>
+ --------------------------------------------------------------------------------------------------------------------        
+        <div class="row">
+            <div class="                                  col-4   d-none   d-block      d-md-none">Hour\Day</div>
+            <div class="                                  col-8   d-none   d-block      d-md-none">Friday</div>
+        </div>
+        <div class="row">
+            <div class="                                  col-4   d-none   d-block      d-md-none">8:00</div>
+            <div class="                                  col-8   d-none   d-block      d-md-none FR 08:00"></div>
+        </div>
+--------------------------------------------------------------------------------------------------------------------->
+    </div>
+    
+    
+    <footer class="footer-fixed-bottom-wrap text-white">
+        <div class="container" id="footer">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Connect with us</h1>
+                    <div class="row">
+                        <div class="col-5"></div>
+                        <div class="col-1">
+                            <a class="iconR" href="https://www.facebook.com/VIAUniversityCollegeInternational/" rel="noopener noreferrer" title="Meet us at Facebook" target="_blank"> <img src="../images/facebook-icon-white.png" id="facebook" alt="Facebook"> </a>
+                        </div>
+                        <div class="col-1">
+                            <a class="iconL" href="https://instagram.com/viauniversitycollege" rel="noopener noreferrer" title="Meet us at Instagram" target="_blank"> <img src="../images/instagram-icon.png" id="instagram" alt="Instagram"> </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5"></div>
+                        <div class="col-1">
+                            <a class="iconR" href="https://www.linkedin.com/company/453415?trk=tyah" rel="noopener noreferrer" title="Meet us at LinkedIn" target="_blank"> <img src="../images/linkedin-icon.png" id="linkedin" alt="LinkedIn"> </a>
+                        </div>
+                        <div class="col-1">
+                            <a class="iconL" href="https://twitter.com/VIAuniversity" rel="noopener noreferrer" title="Meet us at Twitter" target="_blank"> <img src="../images/twitter-icon.png" id="twitter" alt="Twitter"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact">
+                        <h1>Contact us</h1>
+                        <p>VIA Phone: +45 87550020</p>
+                        <p>VIA Email:<a href="mailto:via@via.dk" id="email"> via@via.dk </a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">&copy; 2019 VIA. All rights respected</div>
+            </div>
+        </div>
+    </footer>
+</body>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/schedule.js"></script>
+</html>

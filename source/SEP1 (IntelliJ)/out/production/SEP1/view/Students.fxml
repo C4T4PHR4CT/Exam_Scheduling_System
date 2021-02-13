@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="571.0" prefHeight="500.0" prefWidth="571.0" userData="Exam Scheduler - students" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.StudentsController">
+   <children>
+      <HBox fillHeight="false" minHeight="-Infinity" prefHeight="45.0" prefWidth="560.0">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#Back" prefHeight="37.0" prefWidth="55.0" text="Back">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" fillHeight="false" minHeight="-Infinity" prefHeight="34.0" prefWidth="760.0">
+         <children>
+            <Button fx:id="ViaOrd" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#ViaidOrder" prefHeight="28.0" prefWidth="72.0" text="VIAID \/">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="7.0" top="-1.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="NamOrd" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#NameOrder" prefHeight="28.0" prefWidth="177.0" text="Name">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="8.0" top="-1.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="ClsOrd" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#ClassOrder" prefHeight="28.0" prefWidth="128.0" text="Class">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="8.0" top="-1.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="GrpOrd" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#GroupOrder" prefHeight="28.0" prefWidth="79.0" text="Group">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="8.0" top="-1.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <ListView fx:id="Students" prefHeight="310.0" prefWidth="760.0" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </ListView>
+      <HBox alignment="CENTER_LEFT" minHeight="-Infinity" prefHeight="35.0" prefWidth="760.0">
+         <children>
+            <TextField fx:id="ViaInp" onKeyTyped="#Viaid" prefHeight="30.0" prefWidth="72.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="NamInp" onKeyTyped="#Name" prefHeight="30.0" prefWidth="177.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <ChoiceBox fx:id="ClsInp" prefHeight="30.0" prefWidth="128.0">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ChoiceBox>
+            <TextField fx:id="GrpInp" onKeyTyped="#Group" prefHeight="30.0" prefWidth="79.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" minHeight="-Infinity" prefHeight="44.0" prefWidth="760.0">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#AddStudent" prefHeight="37.0" prefWidth="291.0" text="Add new / overwrite existing student">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets top="-1.0" />
+               </padding>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#RemoveStudent" prefHeight="37.0" prefWidth="225.0" text="Remove student (by VIAID)">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets top="-1.0" />
+               </padding>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets left="20.0" right="20.0" />
+   </padding>
+</VBox>

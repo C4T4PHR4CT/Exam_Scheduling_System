@@ -1,0 +1,105 @@
+
+
+/*-----------------------------------FRONT PAGE------------------------*/
+
+
+/*-----------------------------------NAV BAR STYLE------------------------*/
+body { 
+    
+    background-repeat: no-repeat;
+    background-image: url(../images/campus-background.png);
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+main {
+    padding-bottom: 50px;
+}
+
+.jumbotron {
+    background: transparent;
+}
+.row {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    width: 100%;
+} 
+.carousel {
+    border-radius: 20%;
+    overflow: hidden;
+}
+.mapouter{
+    float:none;
+    position: relative;
+    text-align:center;
+    height:100%;
+    width:100%;
+    
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:100%;
+    width:100%;
+}
+
+#infolist {
+    margin-top: 50px;
+
+}
+
+#map {
+    margin-top: 50px;
+    
+}
+.infobox {
+    font-size: 20px;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+  .infotext1 {
+    margin-bottom: 80px;
+  }
+    .infotext {
+        margin-bottom: 20px;
+    }
+}
+/*
+.infotext {
+    margin-bottom: 20px;
+}
+.infotext1 {
+    margin-bottom: 80px;
+}
+*/
+.navbar-nav 
+{
+    font-weight: 900;
+    font-size: 18px;
+}
+/*.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-brand  {
+    float: left;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+*/
+
+
+
+
+
+
+/*-----------------------------------BODY FRONT PAGE------------------------*/

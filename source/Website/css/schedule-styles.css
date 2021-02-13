@@ -1,0 +1,119 @@
+.navbar-nav 
+{
+    font-weight: 900;
+    font-size: 18px;
+}
+body {
+    
+    background-repeat: no-repeat;
+    background-image: url(../images/campus-background.png);
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.row > div {
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    text-align: center;
+    padding: 0;
+}
+div > a, div > a:hover {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+.begin, .middle, .end {
+    background-color: #BBBBBB;
+    width: 96%;
+    border: 3px solid #000000;
+    position: relative;
+    margin: -5px;
+    left: 4%;
+    font-weight: bold;
+}
+.begin {
+    height: 97%;
+    border-bottom: 0px;
+    top: 8px;
+    
+    line-height: 95%;
+    text-transform: uppercase;
+    z-index: 3;
+}
+.middle {
+    height: 130%;
+    border-bottom: 0px;
+    border-top: 0px;
+    top: 0px;
+    
+    z-index: 2;
+}
+.end {
+    height: 97%;
+    border-top: 0px;
+    top: 0px;
+}
+table {
+    width: 100%;
+    text-align: center;
+}
+th {
+    font-weight: normal;
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+}
+td {
+    background-color: #BBBBBB;
+    border: 2px solid #000000;
+}
+td:hover {
+    color: #333333;
+    font-weight: bold;
+    background-color: #FFFFFF;
+}
+.disabled {
+    color: #000000;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+#footer div *{
+    text-align: center;
+    border: 0;
+    background: transparent;
+}
+#footer > .row{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    width: 100%;
+}
+#midpart1 {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#midpart2 {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.iconR {
+    text-align: right !important;
+    margin: 0;
+    padding: 1px;
+}
+.iconL {
+    text-align: left !important;
+    margin: 0;
+    padding: 1px;
+}
+.halfW {
+    width: 50%;
+}
